@@ -1,0 +1,21 @@
+[project]
+name = "deep-agents"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Song_Zt222", email = "847912698@qq.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "deepagents>=0.7.32",
+    "langchain-openai>=1.7.3",
+    "python-dotenv>=1.2.4",
+    "tavily-python>=0.8.5",
+]
+
+[project.scripts]
+deep-agents = "deep_agents:main"
+
+[build-system]
+requires = ["uv_build>=0.12.24,<0.13.0"]
+build-backend = "uv_build"
