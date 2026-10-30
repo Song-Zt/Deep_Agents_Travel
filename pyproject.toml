@@ -8,9 +8,16 @@ authors = [
 requires-python = ">=3.12"
 dependencies = [
     "deepagents>=0.7.32",
+    "langchain-mcp-adapters>=0.3.1",
     "langchain-openai>=1.7.3",
+    "mcp==2.3.0",
+    "openai>=3.39.0",
+    "pytest>=9.2.0",
+    "pytest-asyncio>=1.4.1",
     "python-dotenv>=1.2.4",
+    "starlette>=1.10.0",
     "tavily-python>=0.8.5",
+    "uvicorn>=0.54.0",
 ]
 
 [project.scripts]
