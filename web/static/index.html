@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>旅行助手</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-mark">✦</span>
+        <span>旅行助手</span>
+      </div>
+
+      <button id="new-session" class="new-session" type="button">
+        <span>＋</span> 新建会话
+      </button>
+
+      <div class="session-list" id="session-list"></div>
+
+      <div class="sidebar-footer">
+        <span class="dot" id="conn-dot"></span>
+        <span id="conn-text">连接中…</span>
+      </div>
+    </aside>
+
+    <main class="chat">
+      <header class="chat-header">
+        <div>
+          <h1 id="chat-title">新会话</h1>
+          <p class="chat-subtitle">景点 · 路线 · 预算 · 行程，一次问清</p>
+        </div>
+        <div class="status" id="status">就绪</div>
+      </header>
+
+      <div class="messages" id="messages">
+        <div class="empty-state" id="empty-state">
+          <div class="empty-mark">✦</div>
+          <h2>想去哪儿玩？</h2>
+          <p>试试问我：</p>
+          <div class="suggestions">
+            <button class="suggestion" type="button">推荐几个北京经典景点</button>
+            <button class="suggestion" type="button">从故宫到天坛怎么走？</button>
+            <button class="suggestion" type="button">上海玩三天大概要花多少钱？</button>
+          </div>
+        </div>
+      </div>
+
+      <form class="composer" id="composer">
+        <textarea
+          id="input"
+          rows="1"
+          placeholder="输入你的旅行问题，Enter 发送，Shift + Enter 换行"
+        ></textarea>
+        <button type="submit" id="send" class="send" disabled>发送</button>
+      </form>
+    </main>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

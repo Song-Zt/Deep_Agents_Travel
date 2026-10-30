@@ -3,9 +3,12 @@
 __pycache__/
 *.pyc
 
+# IDE 配置不随项目上传
+.idea/
+
 # 会话数据库（本地数据，不提交）
-agent_files/conversations.db
-agent_files/conversations.db-*
+**/agent_files/conversations.db
+**/agent_files/conversations.db-*
 
 # Python 基础练习目录，不随项目上传
 基础/
